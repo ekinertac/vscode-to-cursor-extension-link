@@ -1,0 +1,36 @@
+.custom-install-buttons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-install-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 0px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white !important;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-install-button:hover {
+  text-decoration: none !important;
+}
+
+.custom-install-button.blue {
+  background-color: #0078d4;
+}
+
+.custom-install-button.black {
+  background-color: #000000;
+}
+
+.custom-install-button .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}

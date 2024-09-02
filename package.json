@@ -1,0 +1,14 @@
+{
+  "name": "vs-marketplace-cursor-button-adder",
+  "version": "1.0.0",
+  "description": "Adds a 'Install in Cursor' button next to VS Code install buttons in the VS Marketplace",
+  "main": "content.js",
+  "scripts": {
+    "build": "mkdir -p dist && cp manifest.json content.js styles.css jquery-3.7.1.slim.min.js dist/ && cd dist && zip -r ../extension.zip * && cd ../ && rm -rf dist"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "web-ext": "^7.2.0"
+  }
+}

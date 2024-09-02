@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "VS Marketplace Cursor Button Adder",
+  "version": "1.0",
+  "description": "Adds a 'Install in Cursor' button next to VS Code install buttons",
+  "permissions": ["activeTab"],
+  "host_permissions": ["*://marketplace.visualstudio.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://marketplace.visualstudio.com/*"],
+      "js": ["jquery-3.7.1.slim.min.js", "content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "display": "none"
+}
